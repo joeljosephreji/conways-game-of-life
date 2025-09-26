@@ -21,10 +21,11 @@ void Board::readBoard(const std::vector<std::string> &lines) {
     for (const std::string &line : lines) {
         std::vector<int> row;
         for (char c : line) {
-            if (c == 'O')
+            if (c == 'O') {
                 row.push_back(1);
-            else
+            } else {
                 row.push_back(0);
+            }
         }
         board.push_back(row);
     }

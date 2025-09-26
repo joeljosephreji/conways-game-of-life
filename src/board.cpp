@@ -8,7 +8,7 @@ void Board::displayBoard() {
     for (const std::vector<int> &row : board) {
         for (const int digit : row) {
             if (digit == 1) {
-                std::cout << "*";
+                std::cout << "█";
             } else {
                 std::cout << " ";
             }

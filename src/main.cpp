@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
     while (true) {
         board->displayBoard();
         board->passTimeUnit();
-        std::this_thread::sleep_for(std::chrono::milliseconds(250));
+        std::this_thread::sleep_for(std::chrono::milliseconds(100));
     }
     return 0;
 }
